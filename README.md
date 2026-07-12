@@ -1,7 +1,5 @@
 ------------------------------------------------------------------------
 
-editor_options: markdown: wrap: 72 ---
-
 # Loneliness and Psychoactive Substance Use: Meta-Analysis
 
 This repository contains the R code, processed data, tables, and figures for a meta-analysis examining the association between loneliness and psychoactive substance use.

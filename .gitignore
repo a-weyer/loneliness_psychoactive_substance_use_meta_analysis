@@ -1,0 +1,26 @@
+#Create whitelist
+
+/*
+
+# keep files in main dir
+!/.gitignore
+!/README.md
+
+# keep dir for repo
+!/IN_tables/
+!/code/
+!/OUT_data/
+!/meta_table/
+!/results/
+
+# Exclude this subdirectory
+/results/figures/inkscap_edited/
+
+# Ignore R and RStudio session files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Ignore Temporary MS-Office Files
+~$*

@@ -1,19 +1,19 @@
-#Create whitelist
+# Ignore everything in the project root by default
 
 /*
 
-# keep files in main dir
+# Include repository documentation
 !/.gitignore
 !/README.md
 
-# keep dir for repo
+# Include selected project directories
 !/IN_tables/
 !/code/
 !/OUT_data/
 !/meta_table/
 !/results/
 
-# Exclude this subdirectory
+# Exclude manually edited Inkscape figures
 /results/figures/inkscap_edited/
 
 # Ignore R and RStudio session files
@@ -22,5 +22,5 @@
 .Ruserdata
 .Rproj.user/
 
-# Ignore Temporary MS-Office Files
+# Ignore temporary Microsoft Office files
 ~$*

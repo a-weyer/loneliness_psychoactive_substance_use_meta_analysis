@@ -14,7 +14,7 @@ graphics.off()
 ### load data -------------------------------------------------------------
 
 ### load table with k = 3
-meta_k3 <- read_rds("OUT_data/meta_k3.rds")
+meta_k3 <- read_rds("processed_data/meta_k3.rds")
 
 ### prepare data for plots
 meta_k3 <- meta_k3 |> 
@@ -314,7 +314,7 @@ dev.off()
 ###########################################################################
 
 ### load data ------------------------------------------------------------
-meta_k4 <- read_rds("OUT_data/meta_k4.rds")
+meta_k4 <- read_rds("processed_data/meta_k4.rds")
 
 ### prepare data for plots
 meta_k4 <- meta_k4 |> 
@@ -668,7 +668,7 @@ image_write(
 ###########################################################################
 
 ### load data for k 3
-meta_k3 <- read_rds("OUT_data/meta_k3.rds")
+meta_k3 <- read_rds("processed_data/meta_k3.rds")
 
 # create meta object
 meta_plot <- metagen(
@@ -735,7 +735,7 @@ rm(list = ls())
 ###########################################################################
 
 ### load data for k 4
-meta_k4 <- read_rds("OUT_data/meta_k4.rds")
+meta_k4 <- read_rds("processed_data/meta_k4.rds")
 
 # create meta object
 meta_plot <- metagen(
@@ -791,8 +791,3 @@ grid.text(
 )
 
 dev.off()
-
-
-
-
-

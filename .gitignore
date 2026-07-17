@@ -6,10 +6,10 @@
 !/README.md
 
 # Include selected project directories
-!/IN_tables/
+!/input_data/
 !/code/
-!/OUT_data/
-!/meta_table/
+!/processed_data/
+!/master_table/
 !/results/
 
 # Exclude manually edited Inkscape figures

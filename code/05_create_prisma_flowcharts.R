@@ -18,13 +18,13 @@ library(PRISMA2020)
 ### copy template 
 # write.csv(
 #  prisma_data,
-#  "IN_tables/prisma_flow_data.csv",
+#  "input_data/prisma_flow_data.csv",
 #  row.names = FALSE
 # )
 
 ### prisma csv
 prisma_data <- read.csv(
-  "IN_tables/prisma_flow_data.csv",
+  "input_data/prisma_flow_data.csv",
   stringsAsFactors = F
 )
 
@@ -144,4 +144,3 @@ PRISMA_save(
   prisma_plot,
   "results/figures/prisma_flowchart.png"
 )
-

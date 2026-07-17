@@ -3,17 +3,17 @@ library(tidyverse)
 library(readxl)
 
 ### load raw meta table as .xlsx file
-raw_meta_table <- read_excel("meta_table/meta_raw_extraction.xlsx")
+raw_meta_table <- read_excel("master_table/meta_raw_extraction.xlsx")
 
 ### convert raw data into .csv file and save at input dir
-write.csv(raw_meta_table, file = "IN_tables/raw_meta_table.csv")
+write.csv(raw_meta_table, file = "input_data/raw_meta_table.csv")
 
 ### clear env
 rm(list = ls())
 
 
 ### load raw data as csv
-df <- read.csv("IN_tables/raw_meta_table.csv")
+df <- read.csv("input_data/raw_meta_table.csv")
 
 
 glimpse(df)
@@ -63,7 +63,7 @@ meta_k3 <- meta_k3 |>
   )
 
 ### save data with k = 4
-write_rds(meta_k3, "OUT_data/meta_k3.rds")
+write_rds(meta_k3, "processed_data/meta_k3.rds")
 
 ##########################################################################
 # prepare data set for studies k = 4 -------------------------------------
@@ -103,13 +103,4 @@ meta_k4 <- meta_k4 |>
   )
 
 ### save data set
-write_rds(meta_k4, "OUT_data/meta_k4.rds")
-
-
-
-
-
-
-
-
-
+write_rds(meta_k4, "processed_data/meta_k4.rds")

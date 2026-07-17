@@ -2,13 +2,13 @@
 library(tidyverse)
 library(flextable)
 library(officer)
-        
+      
 ###########################################################################
 # meta table k = 3 --------------------------------------------------------
 ###########################################################################
 
 ### load final data set
-df <- read_rds("OUT_data/meta_k3.rds")
+df <- read_rds("processed_data/meta_k3.rds")
 
 ### select and prepare data for table
 df_edit <- df |> 
@@ -115,7 +115,7 @@ save_as_image(
 ###########################################################################
 
 ### load final data set
-df <- read_rds("OUT_data/meta_k4.rds")
+df <- read_rds("processed_data/meta_k4.rds")
 
 ### select and prepare data for table
 df_edit <- df |> 
@@ -226,7 +226,7 @@ save_as_image(
 ###########################################################################
 
 ### load table for pooled results
-results_pool <- read_rds("OUT_data/results_pool_k3.rds")
+results_pool <- read_rds("processed_data/results_pool_k3.rds")
 
 ### clean data for final results table ------------------------------------
   
@@ -372,7 +372,7 @@ save_as_image(
 ###########################################################################
 
 ### laod table for pooled results
-results_pool <- read_rds("OUT_data/results_pool_k4.rds")
+results_pool <- read_rds("processed_data/results_pool_k4.rds")
 
 ### clean data for final results table ------------------------------------
 
@@ -511,4 +511,3 @@ save_as_image(
   path = "results/tables/png/t2_results_table_k4.png",
   dpi = 600
 )
-

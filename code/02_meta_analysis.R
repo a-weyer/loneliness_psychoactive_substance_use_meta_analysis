@@ -7,7 +7,7 @@ library(meta)
 ###########################################################################
 
 ### load table with k = 3
-meta_k3 <- read_rds("OUT_data/meta_k3.rds")
+meta_k3 <- read_rds("processed_data/meta_k3.rds")
 
 ### overall meta analysis -------------------------------------------------
 
@@ -127,7 +127,7 @@ results_pool_k3 <- bind_rows(
 )
 
 ### save as rds
-write_rds(results_pool_k3, "OUT_data/results_pool_k3.rds")
+write_rds(results_pool_k3, "processed_data/results_pool_k3.rds")
 
 ### clear env
 # rm(list = ls())
@@ -140,7 +140,7 @@ write_rds(results_pool_k3, "OUT_data/results_pool_k3.rds")
 ###########################################################################
 
 ### load meta table with k = 4
-meta_k4 <- read_rds("OUT_data/meta_k4.rds")
+meta_k4 <- read_rds("processed_data/meta_k4.rds")
 
 ### overall meta analysis -------------------------------------------------
 
@@ -260,7 +260,7 @@ results_pool_k4 <- bind_rows(
 )
 
 ### save as rds
-write_rds(results_pool_k4, "OUT_data/results_pool_k4.rds")
+write_rds(results_pool_k4, "processed_data/results_pool_k4.rds")
 
 ### clear env
 # rm(list = ls())

@@ -28,9 +28,9 @@ The analyses include pooled effect estimates as well as subgroup analyses based 
         └── png/
 ```
 
-### `code`
+## Code
 
-Contains the R scripts required to process the data, conduct the analyses, and generate the tables and figures.
+The folder `code` contains the R scripts required to process the data, conduct the analyses, and generate the tables and figures.
 
 - `01_clean_raw_meta_data.R` Cleans and prepares the extracted study data.
 
@@ -44,7 +44,7 @@ Contains the R scripts required to process the data, conduct the analyses, and g
 
 - `loneliness_substance_use.Rproj` RStudio project file for the analysis.
 
-## Recommended Execution Order
+### Recommended Execution Order
 
 The scripts should be executed in the following order:
 
@@ -71,11 +71,11 @@ The folder `processed_data/` contains processed R objects generated during the a
 
 ### Metadata
 
-The folder `master_table/` ### `master_table` contains the original Excel master table used for study-level data extraction.
+The folder `master_table/` contains the original Excel master table used for study-level data extraction.
 
-### `input_data`
+### Input Data
 
-Contains the machine-readable input files used by the R scripts:
+The folder `input_data` contains the machine-readable input files used by the R scripts:
 
 - `raw_meta_table.csv`, a CSV export of the original Excel master table
 - `prisma_flow_data.csv`, the input data used to generate the PRISMA flow diagram.

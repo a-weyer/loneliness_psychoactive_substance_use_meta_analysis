@@ -28,13 +28,6 @@ The analyses include pooled effect estimates as well as subgroup analyses based 
         └── png/
 ```
 
-### `input_data`
-
-Contains input data used during the analysis, including:
-
-- `prisma_flow_data.csv`
-- `raw_meta_table.csv`
-
 ### `code`
 
 Contains the R scripts required to process the data, conduct the analyses, and generate the tables and figures.
